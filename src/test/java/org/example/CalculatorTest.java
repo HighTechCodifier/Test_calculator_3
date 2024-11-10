@@ -1,5 +1,6 @@
 package org.example;
 
+import org.junit.Assert;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
@@ -37,6 +38,12 @@ class CalculatorTest {
         assertEquals(expectedValue, actualValue, "\n1. test_add_method FAILED");
         System.out.println("1. test_add_method PASSED");
 
+    }
+
+    @Test
+    @DisplayName("Verify simpleTest")
+    public void test_simpleTest() {
+        Assert.assertTrue(false);
     }
 
 }
